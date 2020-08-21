@@ -32,7 +32,7 @@ public class Starting_Logo_Activity extends BaseActivityWithSwipeDismiss {
     protected void onResume() {
         super.onResume();
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-        String path =  "android.resource://com.awaresiel.genesistrainerdevice/"+R.raw.logo_video_1080p;
+        String path = "android.resource://com.example.genesis_trainer_device_improved/"+  R.raw.logo_video_1080p;
 
         logo.setVideoPath(path);
         logo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

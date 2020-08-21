@@ -109,17 +109,9 @@ public class BaseActivityWithSwipeDismiss extends AppCompatActivity {
 
 
     private void setLanguage(){
-//        String str=  LocaleHelper.getLanguage(App.getmContext());
         String str=  LocaleHelper.getLanguage(this);
-        String str2=  LocaleHelper.getLanguage(this);
-        if (str2 !=null) {
-
-//            LocaleHelper.setLocale(App.getmContext(), str);
-            LocaleHelper.setLocale(this, str);
-            LocaleHelper.setLocale(this, str2);
-            Log.d(TAG, " STR IS " + str);
-            Log.d(TAG, " STR IS " + str2);
-        }
+        LocaleHelper.setLocale(this, str);
+        Log.d(TAG, " STR IS " + str);
     }
 
         public void settoolbar(){

@@ -1,6 +1,10 @@
 package com.example.genesis_trainer_device_improved.helpers;
 
 
+import android.content.Context;
+
+import com.example.genesis_trainer_device_improved.R;
+
 import static com.example.genesis_trainer_device_improved.helpers.Constants.INTENSITY_EASY;
 import static com.example.genesis_trainer_device_improved.helpers.Constants.INTENSITY_HARD;
 import static com.example.genesis_trainer_device_improved.helpers.Constants.INTENSITY_MEDIUM;
@@ -42,14 +46,15 @@ public class Check_Which_Sub_Program {
   // public static boolean smoothness=false;
 
 
-   static public void Check_SubProgram(String name)
+   static public void Check_SubProgram(String name, Context c)
     {
 
 //        intensityhOfTraining=intensity;
 //        setIntensityhOfTraining(intensity);
 
 
-     if(name.contains(Constants.SUBPROGRAM_GET_STARTED ))
+//     if(name.contains(Constants.SUBPROGRAM_GET_STARTED ))
+     if(name.contains(c.getString(R.string.Get_Started)))
         {
             timeOfTraining=10;
             timeofStimulation_ms = 3000;
@@ -62,7 +67,8 @@ public class Check_Which_Sub_Program {
             Py =125;
         }
 
-        else if(name.contains(Constants.SUBPROGRAM_BASIC_1))
+//        else if(name.contains(Constants.SUBPROGRAM_BASIC_1))
+        else if(name.contains(c.getString(R.string.Basic_1)))
         {
             timeOfTraining=15;
             timeofStimulation_ms = 3000;
@@ -74,7 +80,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_BASIC_2))
+//        else if(name.contains(Constants.SUBPROGRAM_BASIC_2))
+        else if(name.contains(c.getString(R.string.Basic_2)))
         {
             timeOfTraining=20;
             timeofStimulation_ms = 4000;
@@ -86,7 +93,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_CONTINUOUS_1))
+//        else if(name.contains(Constants.SUBPROGRAM_CONTINUOUS_1))
+        else if(name.contains(c.getString(R.string.Continuous_1)))
         {
             timeOfTraining=20;
             timeofStimulation_ms = 1000;
@@ -99,7 +107,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_CONTINUOUS_2))
+//        else if(name.contains(Constants.SUBPROGRAM_CONTINUOUS_2))
+     else if(name.contains(c.getString(R.string.Continuous_2)))
         {
             timeOfTraining=30;
             timeofStimulation_ms = 1000;
@@ -112,7 +121,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_1))
+//        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_1))
+        else if(name.contains(c.getString(R.string.Endurance_1)))
         {
             timeOfTraining=15;
             timeofStimulation_ms = 4000;
@@ -124,7 +134,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =250;
         }
-        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_2))
+//        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_2))
+     else if(name.contains(c.getString(R.string.Endurance_2)))
         {
             timeOfTraining=20;
             timeofStimulation_ms = 4000;
@@ -136,7 +147,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =250;
         }
-        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_3))
+//        else if(name.contains(Constants.SUBPROGRAM_ENDURANCE_3))
+        else if(name.contains(c.getString(R.string.Endurance_3)))
         {
             timeOfTraining=25;
             timeofStimulation_ms = 5000;
@@ -148,7 +160,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =250;
         }
-        else if(name.contains(Constants.SUBPROGRAM_STRENGTH_1))
+//        else if(name.contains(Constants.SUBPROGRAM_STRENGTH_1))
+     else if(name.contains(c.getString(R.string.Strength_1)))
         {
             timeOfTraining=15;
             timeofStimulation_ms = 3000;
@@ -160,7 +173,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_STRENGTH_2))
+//        else if(name.contains(Constants.SUBPROGRAM_STRENGTH_2))
+     else if(name.contains(c.getString(R.string.Strength_2)))
         {
             timeOfTraining=30;
             timeofStimulation_ms = 5000;
@@ -172,7 +186,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =125;
         }
-        else if(name.contains(Constants.SUBPROGRAM_FATBURNING_1))
+//        else if(name.contains(Constants.SUBPROGRAM_FATBURNING_1))
+     else if(name.contains(c.getString(R.string.Fatburning_1)))
         {
             timeOfTraining=15;
             timeofStimulation_ms = 4000;
@@ -184,7 +199,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =250;
         }
-        else if(name.contains(Constants.SUBPROGRAM_FATBURNING_2))
+//        else if(name.contains(Constants.SUBPROGRAM_FATBURNING_2))
+     else if(name.contains(c.getString(R.string.Fatburning_2)))
         {
             timeOfTraining=25;
             timeofStimulation_ms = 5000;
@@ -196,7 +212,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =250;
         }
-        else if(name.contains(Constants.SUBPROGRAM_COOLDOWN_1))
+//        else if(name.contains(Constants.SUBPROGRAM_COOLDOWN_1))
+     else if(name.contains(c.getString(R.string.Cooldown_1)))
         {
             timeOfTraining=5;
             timeofStimulation_ms = 1000;
@@ -208,8 +225,9 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =100;
         }
-     else if(name.contains(Constants.SUBPROGRAM_COOLDOWN_2))
-     {
+//     else if(name.contains(Constants.SUBPROGRAM_COOLDOWN_2))
+     else if(name.contains(c.getString(R.string.Cooldown_2)))
+        {
          timeOfTraining=5;
          timeofStimulation_ms = 1000;
          restTme_ms=2000;
@@ -220,7 +238,8 @@ public class Check_Which_Sub_Program {
          Px =175;
          Py =100;
      }
-        else if(name.contains(Constants.SUBPROGRAM_MASAGE_ORDINARY))
+//        else if(name.contains(Constants.SUBPROGRAM_MASAGE_ORDINARY))
+     else if(name.contains(c.getString(R.string.Massage_1)))
         {
             timeOfTraining=15;
             timeofStimulation_ms = 1000;
@@ -231,7 +250,8 @@ public class Check_Which_Sub_Program {
             Px =175;
             Py =100;
         }
-        else if(name.contains(Constants.SUBPROGRAM_ANTI_CELULITE))
+//        else if(name.contains(Constants.SUBPROGRAM_ANTI_CELULITE))
+     else if(name.contains(c.getString(R.string.Anti_cellulite)))
         {
             timeOfTraining=20;
             timeofStimulation_ms = 1000;

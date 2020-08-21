@@ -19,7 +19,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.genesis_trainer_device_improved.Activities.App;
 import com.example.genesis_trainer_device_improved.Activities.Chose_Training_Holder_Activity_For_Fragments;
 import com.example.genesis_trainer_device_improved.Entity.Client;
 import com.example.genesis_trainer_device_improved.Entity.Electrode;
@@ -530,6 +529,7 @@ public class TrainingFragment extends Fragment implements ITrainingFragment, Com
 
     //TODO take care of checkboxes on checkbx clicked
     private void increaseAllImpulses() {
+        if (!isPaused) {
         if (layoutBinding.cbChest.isChecked()) layoutBinding.seekBarChest.incrementProgressBy(1);
         if (layoutBinding.cbHands.isChecked()) layoutBinding.seekBarHands.incrementProgressBy(1);
         if (layoutBinding.cbAbs.isChecked()) layoutBinding.seekBarAbs.incrementProgressBy(1);
@@ -549,6 +549,7 @@ public class TrainingFragment extends Fragment implements ITrainingFragment, Com
         if (layoutBinding.cbTriceps.isChecked())
             layoutBinding.seekBarTriceps.incrementProgressBy(1);
         activity.messageDevice(("<U" + electrodeNumber + ">").getBytes(), trainingSettings.getBtAddress());
+        }
     }
 
     private void decreaseAllImpulses() {

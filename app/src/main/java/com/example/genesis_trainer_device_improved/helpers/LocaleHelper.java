@@ -5,10 +5,12 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import java.util.Locale;
 
 public class LocaleHelper {
+    private static final String TAG = "LocaleHelper";
 
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
@@ -22,10 +24,12 @@ public class LocaleHelper {
         }
 
         setLocale(context, lang);
+        Log.d(TAG, "onCreate: lang= "+lang);
     }
 
     public static void onCreate(Context context, String defaultLanguage) {
         String lang = getPersistedData(context, defaultLanguage);
+        Log.d(TAG, "onCreate: lang  = "+lang);
         setLocale(context, lang);
     }
 
@@ -34,6 +38,7 @@ public class LocaleHelper {
     }
 
     public static void setLocale(Context context, String language) {
+        Log.d(TAG, "setLocale: "+ language);
         persist(context, language);
         updateResources(context, language);
 
@@ -47,7 +52,7 @@ public class LocaleHelper {
     private static void persist(Context context, String language) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
-
+        Log.d(TAG, "persist: language ="+language);
         editor.putString(SELECTED_LANGUAGE, language);
         editor.apply();
     }
@@ -62,7 +67,8 @@ public class LocaleHelper {
         configuration.setLocale(locale);
 
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-
+        Log.d(TAG, "updateResources: configuration.getLocales() "+configuration.getLocales().toLanguageTags());
+        Log.d(TAG, "updateResources: "+locale.getLanguage() );
 
 
     }

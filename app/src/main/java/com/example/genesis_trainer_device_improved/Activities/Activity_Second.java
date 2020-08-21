@@ -89,30 +89,24 @@ public class Activity_Second extends BaseActivityWithSwipeDismiss implements Dia
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId) {
             case R.id.radioButton_russian:
-                LocaleHelper.setLocale(this, "ru");
-                //      LocaleHelper.setLocale(App.getmContext(),"ru");
+                LocaleHelper.setLocale( this, "ru");
+               recreateActivity();
                 break;
             case R.id.radioButton_german:
                 break;
             case R.id.radioButton_english:
-                LocaleHelper.setLocale(this, "en");
-                //     LocaleHelper.setLocale(App.getmContext(),"en");
-
+                LocaleHelper.setLocale( this, "en");
+              recreateActivity();
                 break;
         }
-        recreateActivity();
+
     }
 
     private void recreateActivity() {
         Intent mStartActivity = new Intent(this, Starting_Logo_Activity.class);
-        int mPendingIntentId = 123456;
-        PendingIntent mPendingIntent = PendingIntent.getActivity(this, mPendingIntentId, mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
-        AlarmManager mgr = (AlarmManager) getApplicationContext().getSystemService(ALARM_SERVICE);
-        if (mgr != null) {
-            mgr.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 1000, mPendingIntent);
-        }
-
-        System.exit(0);
+       mStartActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
+       startActivity(mStartActivity);
+       finish();
 
     }
     //public methods

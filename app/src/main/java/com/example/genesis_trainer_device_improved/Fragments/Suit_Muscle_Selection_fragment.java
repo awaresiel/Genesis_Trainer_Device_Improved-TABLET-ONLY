@@ -234,7 +234,7 @@ public class Suit_Muscle_Selection_fragment extends Fragment implements ISuit_Mu
     private void setUpParamters(String subprogram) {
         //once subprogram was chosen we will set up variables, we are taking name of the item from clicked position and passing it to our static method which will
         //give subprogram parameters that equals the name of selected subprogram
-        Check_Which_Sub_Program.Check_SubProgram(subprogram);
+        Check_Which_Sub_Program.Check_SubProgram(subprogram,activity);
 
         layoutBinding.etSetUpDuration.setText(String.valueOf(Check_Which_Sub_Program.getTimeOfTraining()));
 

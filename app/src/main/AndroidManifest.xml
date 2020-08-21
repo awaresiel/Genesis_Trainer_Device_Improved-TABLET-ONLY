@@ -26,21 +26,8 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
 
-
-        <activity android:name=".Activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Activities.Activity_Second" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Activity_Second" />
         <activity android:name=".Activities.Activity_Create_User" />
         <activity android:name=".Activities.Trainer_Activity" />
         <activity android:name=".Activities.Create_trainer_activity" />
@@ -48,6 +35,13 @@
         <activity android:name=".Activities.Create_Client_Activity" />
         <activity android:name=".Activities.Chose_Training_Holder_Activity_For_Fragments"
                   android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.Starting_Logo_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
         <service android:name=".Services.BluetoothService" />

@@ -27,9 +27,7 @@ public class TrainingTimer {
 
     public void setInotifyCallback(ITimeNotify callback) {
         notifyTime = callback;
-//        if (!paused){
             notifyTime.notifyReinitializeWidgets(reinitializeStates);
-//        }
     }
 
     public void setReinitializeStates(Bundle b){
