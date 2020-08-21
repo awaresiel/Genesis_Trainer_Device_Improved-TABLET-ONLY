@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<!--    <style name="AppTheme" parent="Widget.AppCompat.Light.ActionBar">-->
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorAppBar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+        <!-- custom spinner styles-->
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+
+
+<!--    Style for Dialog that shows clients to select-->
+
+    <style name="FullHeightDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--    this one is for when using customly made toolbar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorAppBar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorAppBar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">#9ddbdf</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">#9ddbdf</item>
+    </style>
+
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorAccent">#9ddbdf</item>
+    </style>
+
+<!--    <style name="MyActionBarLogo" parent="@style/Widget.AppCompat.Light.ActionBar">-->
+<!--    <style name="MyActionBarLogo" parent="@style/Theme.AppCompat.Light.DarkActionBar">-->
+<!--        <item name="background">@color/colorPrimary</item>-->
+<!--        <item name="android:text">Genesis Fitness Pro</item>-->
+<!--       -->
+<!--    </style>-->
+
+</resources>

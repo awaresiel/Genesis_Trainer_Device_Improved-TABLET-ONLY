@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_frame_layout_style"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/textView_clientNameTrainingSelection"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/textView_trainerNameTrainingSelection"
+        app:layout_constraintTop_toBottomOf="@+id/et_SetUp_Time_Rest">
+
+        <RadioButton
+            android:id="@+id/radioButton_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:button="@android:drawable/btn_radio"
+            android:text="@string/easy"
+            android:textColor="@color/colorRed"
+            android:textColorHighlight="@color/colorAppBar" />
+
+        <RadioButton
+            android:id="@+id/radioButton_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:button="@android:drawable/btn_radio"
+            android:text="@string/medium"
+            android:textColor="@color/colorRed"
+            android:textColorHighlight="@color/colorAppBar" />
+
+        <RadioButton
+            android:id="@+id/radioButton_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:button="@android:drawable/btn_radio"
+            android:text="@string/hard"
+            android:textColor="@color/colorRed"
+            android:textColorHighlight="@color/colorAppBar" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButton_selectedClient"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_clientNameTrainingSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_selectedClient"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_selectedClient"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_selectedClient" />
+
+
+    <Button
+        android:id="@+id/button_decDuration"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/textView_trainerNameTrainingSelection"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_connectedDevicesDisplay" />
+
+    <Button
+        android:id="@+id/button_decTimeOfStimuli"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toStartOf="@+id/button_decDuration"
+        app:layout_constraintTop_toBottomOf="@+id/button_decDuration" />
+
+    <Button
+        android:id="@+id/button_decRestTime"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="-"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toStartOf="@+id/et_SetUp_Time_Rest"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/button_decTimeOfStimuli"
+        app:layout_constraintTop_toBottomOf="@+id/button_decTimeOfStimuli" />
+
+    <Button
+        android:id="@+id/button_incDuration"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="8dp"
+        android:text="+"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/et_SetUp_Duration"
+        app:layout_constraintTop_toTopOf="@+id/et_SetUp_Duration" />
+
+    <Button
+        android:id="@+id/button_incTimeOfStimuli"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/et_SetUp_Time_Stimulation"
+        app:layout_constraintTop_toBottomOf="@+id/button_incDuration" />
+
+    <Button
+        android:id="@+id/button_incRestTime"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/et_SetUp_Time_Rest"
+        app:layout_constraintTop_toBottomOf="@+id/button_incTimeOfStimuli" />
+
+    <EditText
+        android:id="@+id/et_SetUp_Duration"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/colorRed"
+        android:textColorHint="@color/colorRed"
+        android:textCursorDrawable="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/button_decDuration"
+        app:layout_constraintTop_toTopOf="@+id/button_decDuration" />
+
+    <EditText
+        android:id="@+id/et_SetUp_Time_Stimulation"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/colorRed"
+        android:textColorHint="@color/colorRed"
+        android:textCursorDrawable="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/button_decTimeOfStimuli"
+        app:layout_constraintTop_toBottomOf="@+id/et_SetUp_Duration" />
+
+    <EditText
+        android:id="@+id/et_SetUp_Time_Rest"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/colorRed"
+        android:textCursorDrawable="@color/colorRed"
+        app:layout_constraintStart_toEndOf="@+id/button_decRestTime"
+        app:layout_constraintTop_toBottomOf="@+id/et_SetUp_Time_Stimulation" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/duration"
+        android:textColor="@color/colorRed"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/button_incDuration"
+        app:layout_constraintTop_toTopOf="@+id/button_incDuration" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/time_of_stimulation_s"
+        android:textColor="@color/colorRed"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/button_incTimeOfStimuli"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/rest_time_ms"
+        android:textColor="@color/colorRed"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/button_incRestTime"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+
+
+    <!--    <include-->
+<!--        android:id="@+id/include"-->
+<!--        layout="@layout/human_suit_back_layout"-->
+<!--        android:layout_width="0dp"-->
+
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/include2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView_clientNameTrainingSelection"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+<!--    <include-->
+<!--        android:id="@+id/include2"-->
+<!--        layout="@layout/human_suit_front_layout"-->
+<!--        android:layout_width="0dp"-->
+
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/include"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/include"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/include" />-->
+
+        <FrameLayout
+            android:id="@+id/suitsFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            app:layout_constraintBottom_toTopOf="@+id/button_saveSetup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2">
+
+            <include
+                android:id="@+id/include2"
+                layout="@layout/front_back_suits_together_layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/include"
+                app:layout_constraintTop_toBottomOf="@+id/textView_trainerNameTrainingSelection" />
+        </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton_selectedTrainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_trainerNameTrainingSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_selectedTrainer"
+        app:layout_constraintStart_toStartOf="@id/imageButton_selectedTrainer"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_selectedTrainer" />
+
+    <Spinner
+        android:id="@+id/spinner_program"
+        style="@style/spinnerDropDownItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_selectedClient"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_selectedTrainer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_subProgram"
+        style="@style/spinnerDropDownItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_program"
+        app:layout_constraintStart_toStartOf="@+id/spinner_program"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_program" />
+
+    <Spinner
+        android:id="@+id/spinner_connectedDevicesDisplay"
+        style="@style/spinnerDropDownItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_subProgram"
+        app:layout_constraintStart_toStartOf="@+id/spinner_subProgram"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_subProgram" />
+
+        <Button
+            android:id="@+id/button_saveSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_selector"
+            android:text="save"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/suitsFrame"
+            app:layout_constraintStart_toStartOf="@+id/suitsFrame"
+            app:layout_constraintTop_toBottomOf="@+id/suitsFrame" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

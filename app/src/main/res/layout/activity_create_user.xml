@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackgrounds"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:text="CREATE PROFILE" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton_userPicture"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:background="@null"
+                android:backgroundTint="#00F1EBEB"
+                android:onClick="onClick_userPicture"
+                android:padding="10sp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+            <EditText
+                android:id="@+id/createUser_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="name"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="last name"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="date of birth(DD/MM/YYY)"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="userGender"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="address"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="email"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="weight"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="height"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="mobile"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:hint="postcode"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createUser_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <EditText
+                android:id="@+id/createdUser_repeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="Repeat password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed" />
+
+            <Button
+                android:id="@+id/btn_Create_user_sbmit"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="50sp"
+                android:background="@drawable/button_style"
+                android:onClick="onClick_Btn_Submit"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonBack_createUserProfile"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_style"
+                android:onClick="onclick_btnBack"
+                android:text="back"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

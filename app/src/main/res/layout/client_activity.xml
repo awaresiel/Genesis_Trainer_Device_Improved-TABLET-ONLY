@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout18"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo2_without_letters"
+    android:backgroundTint="@color/colorLayoutBackgrounds"
+    android:backgroundTintMode="add"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/client_activity_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/spinner_style"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strengthtext_hands" />
+
+    <ImageButton
+        android:id="@+id/imageButton_create_newClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ad_user_icon_80" />
+
+    <TextView
+        android:id="@+id/strengthtext_hands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:shadowColor="@color/colorAccent"
+        android:text="@string/create_client"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/imageButton_create_newClient"
+        app:layout_constraintStart_toStartOf="@id/imageButton_create_newClient"
+        app:layout_constraintTop_toBottomOf="@id/imageButton_create_newClient" />
+
+    <Button
+        android:id="@+id/button_goToTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="193dp"
+        android:background="@drawable/button_style"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack_clientActivity"
+        app:layout_constraintTop_toBottomOf="@+id/client_activity_recycler" />
+
+    <Button
+        android:id="@+id/buttonBack_clientActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_style"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/button_goToTraining"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_activity_recycler" />
+</androidx.constraintlayout.widget.ConstraintLayout>

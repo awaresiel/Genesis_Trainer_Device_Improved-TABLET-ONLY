@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAppBar">#64b5f6</color>
+    <color name="colorPrimary">#1584eb</color>
+    <color name="colorPrimaryDark">#1547eb</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent_selection">#B3E5FC</color>
+    <color name="colorLayoutBackgrounds">#1B1C1D</color>
+<!--    <color name="colorLayoutBackgrounds">#cfd8dc</color>-->
+    <color name="colorRed">#B40000</color>
+    <color name="colorBlack">#1B1C1D</color>
+    <color name="colorGrey">#33353A</color>
+    <color name="colorLightGrey">#958A8B</color>
+    <color name="colorMediumGrey">#857778</color>
+    <color name="colorDarkRed">#640007</color>
+    <color name="transparent">#00000000</color>
+</resources>

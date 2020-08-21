@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+<!--    <item android:drawable="@drawable/human_1" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_2" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_3" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_4" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_5" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_6" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_7" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_8" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_9" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_11" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_12" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_13" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_14" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_15" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_16" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_17" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_18" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_19" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_20" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_21" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_22" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_23" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_24" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_25" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_26" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_27" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_28" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_29" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_30" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_31" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_32" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_33" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_34" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_35" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_36" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_37" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_38" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_39" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_40" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_41" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_42" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_43" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_44" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_45" android:duration="50" />-->
+<!--    <item android:drawable="@drawable/human_46" android:duration="50" />-->
+
+
+
+</animation-list>

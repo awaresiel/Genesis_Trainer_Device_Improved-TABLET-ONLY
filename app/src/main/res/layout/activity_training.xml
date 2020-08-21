@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="center_vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_impulseStrength"
+        app:layout_constraintEnd_toStartOf="@+id/startTraining_btn_Start"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.49">
+
+        <EditText
+            android:id="@+id/startTraining_EditText_timeLimit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="00"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:background="#e0e0e0"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/startTraining_EditText_timeLimit"
+            app:layout_constraintStart_toEndOf="@+id/startTraining_EditText_timeLimit"
+            app:layout_constraintTop_toTopOf="@+id/startTraining_EditText_timeLimit" />
+
+        <EditText
+            android:id="@+id/startTraining_EditText_timeLimit_seconds"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="00"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_impulsePausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="32dp"
+        android:hint="1000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/startTraining_btn_TimeCounter"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/startTraining_btn_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_style"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout21"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/startTraining_btn_Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/button_style"
+        android:text="@string/pause"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_saveTraining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startTraining_btn_TimeCounter"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/pause"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_impulsePausa"
+        app:layout_constraintStart_toStartOf="@+id/tv_impulsePausa"
+        app:layout_constraintTop_toBottomOf="@+id/tv_impulseStrength" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/impulse"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_impulseStrength"
+        app:layout_constraintStart_toStartOf="@+id/tv_impulseStrength"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startTraining_btn_TimeCounter"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="16dp"
+        android:background="#e0e0e0"
+        android:text="00:00"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_impulsePausa"
+        app:layout_constraintEnd_toStartOf="@+id/startTraining_btn_Stop"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/tv_impulseStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:hint="3000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+    <TextView
+        android:id="@+id/tv_showDeviceName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="show connected device name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/button_currently_connected_device"
+        app:layout_constraintStart_toStartOf="@+id/tv_impulsePausa"
+        app:layout_constraintTop_toBottomOf="@+id/startTraining_btn_Stop" />
+
+    <ImageButton
+        android:id="@+id/imageButton_GroupTrainningImage"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentTrainingName"
+        app:srcCompat="@drawable/genesis_small_picture_suit_upper_part" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_removeClient">
+
+        <ImageView
+            android:id="@+id/imageView_display_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:background="#b0bec5"
+            android:scaleType="fitXY"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_gif"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|fill_horizontal"
+            android:foregroundGravity="fill_horizontal"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_abs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="0sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameAbs"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameAbs"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameAbs" />
+
+            <TextView
+                android:id="@+id/textView_nameAbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:text="абс"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <CheckBox
+                android:id="@+id/cb_quadriceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameQuads"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameQuads"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameQuads" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_back"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_back"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_back">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_back"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_nameTrapez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="трапец"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+            <TextView
+                android:id="@+id/strengthtext_back"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_trapesius"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_lowerBack"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_lowerBack"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_lowerBack">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_lowerback"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strengthtext_extra"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_glutes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameExtra"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameExtra"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameExtra" />
+
+            <TextView
+                android:id="@+id/strengthtext_hands"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="0%"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_chest"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="3dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_extra"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_extra"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_extra">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_extra"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout40"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_triceps"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_triceps"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_triceps">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_Triceps"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout41"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_shoulder"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_shoulder"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_shoulder">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+
+                        android:id="@+id/seekBar_Shoulder"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_hands"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_hands"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_hands">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_hands"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_nameQuads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="quads"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_trapesius"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_trapesius"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_trapesius">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_trapesius"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_hamstrings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameHams"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameHams"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameHams" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="3dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_hamstrings"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_hamstrings"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_hamstrings">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekbar_hamstrings"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strengthtext_abs"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="0%"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_hands"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/strengthtext_chest"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="0%"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_nameHams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="hams"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout9"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout9"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+            <TextView
+                android:id="@+id/strengthtext_quadriceps"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_abs"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_abs"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_abs"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_abs">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_abs"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strengthtext_glutes"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_hamstrings"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_glutes"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_glutes"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_glutes">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_gluteus"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_nameHands"
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:text="Руки"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+            <TextView
+                android:id="@+id/textViewNameCHest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:text="Грудь"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+            <CheckBox
+                android:id="@+id/cb_chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="0sp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewNameCHest"
+                app:layout_constraintStart_toStartOf="@+id/textViewNameCHest"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameCHest" />
+
+            <TextView
+                android:id="@+id/strengthtext_hamstrings"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_lowerBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameBack"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameBack"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameBack" />
+
+            <TextView
+                android:id="@+id/strengthtext_lowerBack"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_nameExtra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="extra"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout11"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout11"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+            <CheckBox
+                android:id="@+id/cb_trapesius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameTrapez"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameTrapez"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameTrapez" />
+
+            <CheckBox
+                android:id="@+id/cb_lowerBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameLowerBack"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameLowerBack"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameLowerBack" />
+
+            <TextView
+                android:id="@+id/textView_nameGlutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="glutes"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout10"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout10"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+            <TextView
+                android:id="@+id/textView_nameLowerBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="lower"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+            <TextView
+                android:id="@+id/textView_nameBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="спина"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_chest"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_chest"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_chest">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_chest"
+                        style="@style/CustomSeekBar"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strengthtext_trapesius"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_quadriceps"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="25sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/strengthtext_quadriceps"
+                app:layout_constraintStart_toStartOf="@+id/strengthtext_quadriceps"
+                app:layout_constraintTop_toBottomOf="@+id/strengthtext_quadriceps">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_quadriceps"
+                        android:layout_width="316dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:maxHeight="80dp"
+                        android:minHeight="80dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress"
+                        android:rotation="270"
+                        android:splitTrack="false"
+                        android:theme="@style/CustomSeekBar"
+                        android:thumb="@drawable/thumb" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_hands"
+                android:layout_width="33dp"
+                android:layout_height="35dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textSize="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameHands"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameHands"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameHands" />
+
+            <CheckBox
+                android:id="@+id/cb_glutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameGlutes"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameGlutes"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameGlutes" />
+
+            <TextView
+                android:id="@+id/strengthtext_shoulder"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="0%"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_triceps"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/strengthtext_triceps"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="0%"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/strengthtext_extra"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_nameTriceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="triceps"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout40"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout40"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout40" />
+
+            <TextView
+                android:id="@+id/textView_nameShoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Shoulder"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout41"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout41"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout41" />
+
+            <CheckBox
+                android:id="@+id/cb_Triceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameTriceps"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameTriceps"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameTriceps" />
+
+            <CheckBox
+                android:id="@+id/cb_Shoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameShoulder"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameShoulder"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameShoulder" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textview_user_Image_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/tv_currentTrainingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textview_user_Image_name"
+        app:layout_constraintStart_toStartOf="@+id/textview_user_Image_name"
+        app:layout_constraintTop_toBottomOf="@+id/textview_user_Image_name" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+    <ImageButton
+        android:id="@+id/button_currently_connected_device"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icons8_bluetooth_2_48"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/startTraining_btn_Stop"
+        app:layout_constraintStart_toEndOf="@+id/tv_showDeviceName"
+        app:layout_constraintTop_toBottomOf="@+id/startTraining_btn_Stop" />
+
+    <ImageButton
+        android:id="@+id/imageButton_personal_deviceImg"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/divider15"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_GroupTrainningImage"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_GroupTrainningImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_GroupTrainningImage"
+        app:srcCompat="@drawable/genesis_black_device" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView_gif"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/connectedgif"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar_increase_all_levels"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar_increase_all_levels"
+        app:layout_constraintTop_toTopOf="@+id/seekBar_increase_all_levels"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <SeekBar
+        android:id="@+id/seekBar_increase_all_levels"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/button_currently_connected_device"
+        app:layout_constraintStart_toStartOf="@+id/tv_showDeviceName"
+        app:layout_constraintTop_toBottomOf="@+id/strengthText_increaseAllLevels" />
+
+    <TextView
+        android:id="@+id/strengthText_increaseAllLevels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="@+id/button_currently_connected_device"
+        app:layout_constraintStart_toStartOf="@+id/tv_showDeviceName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_showDeviceName" />
+
+    <ImageButton
+        android:id="@+id/imageButton_decAllImpulses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_incAllImpulses"
+        app:layout_constraintStart_toStartOf="@+id/seekBar_increase_all_levels"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_increase_all_levels"
+        app:srcCompat="@drawable/icons8_minus_40" />
+
+    <ImageButton
+        android:id="@+id/imageButton_incAllImpulses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_increase_all_levels"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_increase_all_levels"
+        app:srcCompat="@drawable/icons8_plus_40" />
+
+    <ImageButton
+        android:id="@+id/button_saveTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider15"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_decAllImpulses"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_decAllImpulses"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_decAllImpulses"
+        app:srcCompat="@drawable/icons8_save_40" />
+
+    <ImageButton
+        android:id="@+id/button_loadTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton_incAllImpulses"
+        app:layout_constraintStart_toStartOf="@+id/imageButton_incAllImpulses"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_incAllImpulses"
+        app:srcCompat="@drawable/icons8_load_resume_template_40" />
+
+    <ImageView
+        android:id="@+id/imageview_removeClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

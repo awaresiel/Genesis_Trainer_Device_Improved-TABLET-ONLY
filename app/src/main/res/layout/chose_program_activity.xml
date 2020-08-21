@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackgrounds"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="450dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/recyclerView_programsList"
+                app:layout_constraintStart_toEndOf="@+id/imageButton_selectedClient"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gear" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="120dp"
+                android:gravity="center"
+                android:weightSum="12"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Basic"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Cardio"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Strength"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Fatburning"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <!--        android:button="@null"-->
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Relaxation"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/tv_Program_Massage"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/colorselector_shape_rectangle"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="5sp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/Btn_next_user_logdActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_style"
+                android:text="@string/next"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/button_choseprogram_back"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_programsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton_selectedTrainer"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0.060000002">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerView_programsList"
+                app:layout_constraintEnd_toStartOf="@+id/recyclerView_programsList"
+                app:layout_constraintTop_toTopOf="@+id/recyclerView_programsList" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerView_programsList"
+                app:layout_constraintStart_toEndOf="@+id/recyclerView_programsList"
+                app:layout_constraintTop_toTopOf="@+id/recyclerView_programsList" />
+
+            <ImageButton
+                android:id="@+id/imageButton_selectedClient"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton_selectedTrainer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_clientNameTrainingSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton_selectedClient"
+                app:layout_constraintStart_toStartOf="@+id/imageButton_selectedClient"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton_selectedClient" />
+
+            <TextView
+                android:id="@+id/textView_trainerNameTrainingSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@id/imageButton_selectedTrainer"
+                app:layout_constraintStart_toStartOf="@id/imageButton_selectedTrainer"
+                app:layout_constraintTop_toBottomOf="@id/imageButton_selectedTrainer" />
+
+            <Button
+                android:id="@+id/button_choseprogram_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_style"
+                android:text="@string/back"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/Btn_next_user_logdActivity"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/Btn_next_user_logdActivity" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:text="@string/chose_your_device"
+                android:textColor="@android:color/holo_blue_dark"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton_selectedTrainer"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/divider11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                layout="@layout/human_suit_front_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="510dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

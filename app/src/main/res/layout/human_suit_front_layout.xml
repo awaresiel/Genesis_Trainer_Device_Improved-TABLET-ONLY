@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:rotationX="0">
+
+    <FrameLayout
+        android:layout_width="450dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_fullbodyimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/grey_new_human_front_with_logo2" />
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/imageView_fullbodyimage"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/imageView_fullbodyimage"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/imageView_fullbodyimage"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/imageView_fullbodyimage">-->
+
+        <ImageButton
+            android:id="@+id/imageButton_chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_front_chest_button_transparent" />
+
+        <ImageButton
+            android:id="@+id/imageButton_rightArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_front_right_arm_button_transparent" />
+
+        <ImageButton
+            android:id="@+id/imageButton_leftArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="254dp"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_rightArm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_front_left_arm_button_transparent" />
+
+        <ImageButton
+            android:id="@+id/imageButton_abs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="88dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_chest"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_chest"
+            app:layout_constraintTop_toTopOf="@+id/imageButton_chest"
+            app:srcCompat="@drawable/green_front_abdomen_button" />
+
+        <ImageButton
+            android:id="@+id/imageButton_quads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="258dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton_abs"
+            app:layout_constraintStart_toStartOf="@+id/imageButton_abs"
+            app:layout_constraintTop_toTopOf="@+id/imageButton_abs"
+            app:srcCompat="@drawable/green_front_quad_button_transparent" />
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="programs_list">
+        <item>@string/Basic</item>
+        <item>@string/Cardio</item>
+        <item>@string/Strength</item>
+        <item>@string/Fat_burning</item>
+        <item>@string/Relaxation</item>
+        <item>@string/Massage</item>
+    </string-array>
+
+    <string-array name="subprogram_basic">
+        <item>@string/Get_Started</item>
+        <item>@string/Basic_1</item>
+        <item>@string/Basic_2</item>
+        <item>@string/Continuous_1</item>
+        <item>@string/Continuous_2</item>
+    </string-array>
+
+    <string-array name="subprogram_cardio">
+        <item>@string/Endurance_1</item>
+        <item>@string/Endurance_2</item>
+        <item>@string/Endurance_3</item>
+    </string-array>
+
+    <string-array name="subprogram_strength">
+        <item>@string/Strength_1</item>
+        <item>@string/Strength_2</item>
+    </string-array>
+
+    <string-array name="subprogram_fat_burning">
+        <item>@string/Fatburning_1</item>
+        <item>@string/Fatburning_2</item>
+    </string-array>
+
+    <string-array name="subprogram_relaxation">
+        <item>@string/Cooldown_1</item>
+        <item>@string/Cooldown_2</item>
+    </string-array>
+
+    <string-array name="subprogram_massage">
+        <item>@string/Massage_1</item>
+        <item>@string/Anti_cellulite</item>
+    </string-array>
+
+
+</resources>

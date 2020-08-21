@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen2_LLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo2_without_letters"
+    android:backgroundTint="@color/colorLayoutBackgrounds"
+    android:backgroundTintMode="add"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radiogroup_languages"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radioButton_russian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/russian"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_german"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/german"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/english"
+                    android:button="@android:color/transparent" />
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/img_btn_2s_creatProfile"
+                android:layout_width="106dp"
+                android:layout_height="83dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:backgroundTint="#90a4ae"
+                app:srcCompat="@drawable/ad_user_icon_80" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:text="@string/already_have_an_account_log_in"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn_SignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:background="@drawable/button_style"
+                android:onClick="onClick_Btn_SignIn"
+                android:shadowColor="#2196F3"
+                android:text="@string/login"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/img_btn_2s_back"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/button_style"
+                android:onClick="onClick_buttonBack"
+                android:text="@string/back"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout17"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackgrounds"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logo2_without_letters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_createClient_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_createClientImage" />
+
+            <EditText
+                android:id="@+id/et_createClient_lastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_createClient_name" />
+
+            <ImageView
+                android:id="@+id/imageView_createClientImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <EditText
+                android:id="@+id/et_createClient_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_createClient_lastName" />
+
+            <EditText
+                android:id="@+id/et_createClient_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="number|textPersonName"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_createClient_email" />
+
+            <EditText
+                android:id="@+id/et_createClient_notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edit_texts"
+                android:ems="10"
+                android:hint="@string/notes"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textCursorDrawable="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_createClient_mobile" />
+
+            <Button
+                android:id="@+id/button_saveClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_style"
+                android:text="@string/save"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/et_createClient_notes"
+                app:layout_constraintStart_toEndOf="@+id/createClient_btn_back"
+                app:layout_constraintTop_toBottomOf="@+id/et_createClient_notes" />
+
+            <Button
+                android:id="@+id/createClient_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="@string/back"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button_saveClient"
+                app:layout_constraintEnd_toStartOf="@+id/button_saveClient"
+                app:layout_constraintStart_toStartOf="@+id/et_createClient_notes"
+                app:layout_constraintTop_toTopOf="@+id/button_saveClient" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

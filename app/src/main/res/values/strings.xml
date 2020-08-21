@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Genesis Fitness Pro Improved </string>
+    <string name="limitation">
+    Before you start training it is important to make sure that your health allows you to use EMS training method. \n
+-You shouldn\'t start training if you have following health issues: \n
+-epilepsy\n
+-pregnancy\n
+-severe local circulatory disorders \n
+-hernia of the abdominal wall of the groin \n
+-tuberculosis\n
+-tumor diseases\n
+-progressive arteriosclerosis, circulatory disorders \n
+-severe neurological diseases\n
+-febrile illness, acute bacterial or viral processes \n
+-bleeding, a strong tendency to bleeding (hemophilia) \n
+-diabetes \n
+-for women: please warn your coach if you use a spiral to prevent unwanted pregnancy \n
+   If you have concerns whether or not EMS is suitable for you, consult with your GP\n
+    </string>
+    <string name="DisagreeDialog">
+        - To countinue you need to agree with terms of usage
+    </string>
+    <string name="Agree">Agree</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+    <string name="Open_menu" translatable="false">Open menu</string>
+    <string name="Close_menu" translatable="false">Close menu</string>
+    <string name="disagee">Disagee</string>
+    <string name="agree">Agree</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log in!</string>
+    <string name="login">Login</string>
+    <string name="back">Back</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="please_enter_your_email_and_password">Please enter your email and password</string>
+    <string name="are_you_a_trainer_make_a_profile">Are you a coach? Make a profile!</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_client">Create Client</string>
+    <string name="next">Next</string>
+    <string name="Edit_Trainer">Edit Coach</string>
+    <string name="Delete_Trainer">Delete Coach</string>
+    <string name="Edit_Client">Edit Client</string>
+    <string name="Delete_Client">Delete Client</string>
+    <string name="add_client">Add Client</string>
+    <string name="Basic">Basic</string>
+    <string name="Get_Started">Get Started</string>
+    <string name="Basic_1">Basic 1</string>
+    <string name="Basic_2">Basic 2</string>
+    <string name="Continuous_1">Continuous 1</string>
+    <string name="Continuous_2">Continuous 2</string>
+    <string name="Cardio">Cardio</string>
+    <string name="Endurance_1">Endurance 1</string>
+    <string name="Endurance_2">Endurance 2</string>
+    <string name="Endurance_3">Endurance 3</string>
+    <string name="Strength">Strength</string>
+    <string name="Strength_1">Strength 1</string>
+    <string name="Strength_2">Strength 2</string>
+    <string name="Fat_burning">Fat burning</string>
+    <string name="Fatburning_1">Fatburning 1</string>
+    <string name="Fatburning_2">Fatburning 2</string>
+    <string name="Relaxation">Relaxation</string>
+    <string name="Cooldown_1">Cooldown 1</string>
+    <string name="Cooldown_2">Cooldown 2</string>
+    <string name="Massage">Massage</string>
+    <string name="Massage_1">Massage</string>
+    <string name="Anti_cellulite">Anti-cellulite</string>
+    <string name="Chose_Program_and_connect_to_your_device">Chose Program and connect to your device</string>
+    <string name="SAVED">SAVED</string>
+    <string name="Please_make_sure_that_youve_selected_subprogram">Please make sure that you\'ve selected subprogram</string>
+    <string name="triceps">Triceps</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="hamstrings">Hamstrings</string>
+    <string name="hard">Hard</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="extra">Extra</string>
+    <string name="gluteus">Gluteus</string>
+    <string name="hands">Hands</string>
+    <string name="lower_back">L. Back</string>
+    <string name="back_spina">Back</string>
+    <string name="trapesious">Trapesious</string>
+    <string name="quadriceps">Quadriceps</string>
+    <string name="abs">Abs</string>
+    <string name="chest">Chest</string>
+    <string name="duration">Duration</string>
+    <string name="time_of_stimulation_s">Time of stimulation, s</string>
+    <string name="rest_time_ms">Rest time ms</string>
+    <string name="impulse">Impulse</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="remove">Remove</string>
+    <string name="Training_Saved">Training Saved</string>
+    <string name="Biceps">Biceps</string>
+    <string name="Abdomen">Abdomen</string>
+    <string name="Quadriceps">Quadriceps</string>
+    <string name="Trapez">Trapes</string>
+    <string name="Shoulder">Shoulder</string>
+    <string name="Extra_1">Extra 1</string>
+    <string name="Extra_2">Extra 2</string>
+    <string name="chose_your_device">Choose your device</string>
+    <string name="Resume">Resume</string>
+ <string name="stop">stop</string>
+ <string name="selection_limit_7_clients">You can only select up to 7 Clients</string>
+ <string name="client_already_present">Client is already present in training</string>
+    <string name="same_updating">" same, updating "</string>
+ <string name="users_profile_updating_fields">\'s profile updating fields</string>
+ <string name="creating_new_profile">\'s new profile created</string>
+ <string name="email_not_valid">Email isnt valid</string>
+ <string name="something_went_wrong">Something went wrong</string>
+ <string name="you_haven_picked_pic">You haven\'t picked Image</string>
+ <string name="all_fields_must_be_filled">All fields must be filled</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+ <string name="open_drawer" translatable="false">Open Drawer</string>
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Genesis Fitness Pro Improved "</string>
+    <string name="limitation">Перед началом обучения важно убедиться, что ваше здоровье позволяет вам использовать EMS тренировки.\n
+        Не следует начинать тренировку, если у вас есть следующие проблемы со здоровьем:\n
+        -Эпилепсия\n
+        -Беременность\n
+        -Системные заболевания крови\n
+        -Туберкулез\n
+        -Наличие имплантов\n
+        -Лихорадка\n
+        -Температура\n
+        -Психозы\n
+        -Кровотечения и открытые порезы\n
+        -Тяжелые неврологические заболевания\n
+        -Диабет\n
+        -Наличие кардиостимуляторов\n
+        -Опухоли\n
+        -Атеросклероз\n
+        -Для женщин: пожалуйста, предупредите своего тренера,\n
+        если вы используете спираль для предотвращения нежелательной беременности\n
+        Если у Вас есть сомнения, можно ли Вам проходить ЭМС тренировку, проконсультируйтесь с врачом\n
+    </string>
+    <string name="DisagreeDialog">- Для продолжения необходимо согласиться с условиями использования</string>
+    <string name="Agree">Согласен</string>
+    <string name="disagee">Отменить</string>
+    <string name="agree">Согласен</string>
+    <string name="already_have_an_account_log_in">Уже есть аккаунт? Авторизироваться!</string>
+    <string name="login">Авторизироваться</string>
+    <string name="back">Назад</string>
+    <string name="password">пароль</string>
+    <string name="email">почта</string>
+    <string name="please_enter_your_email_and_password">Пожалуйста, введите адрес электронной почты и пароль</string>
+    <string name="are_you_a_trainer_make_a_profile">Вы тренер? Создайте профиль!</string>
+    <string name="name">Имя</string>
+    <string name="phone">Телефон</string>
+    <string name="notes">Примечания</string>
+    <string name="save">Сохранить</string>
+    <string name="last_name">Фамилия</string>
+    <string name="create_client">Создать клиента</string>
+    <string name="next">Продолжить</string>
+    <string name="Edit_Trainer">Редактировать тренера</string>
+    <string name="Delete_Trainer">Удалить тренера</string>
+    <string name="Edit_Client">Изменить клиента</string>
+    <string name="Delete_Client">Удалить клиента</string>
+    <string name="add_client">добавить клиента</string>
+    <string name="Basic">Базовая</string>
+    <string name="Get_Started">Начать</string>
+    <string name="Basic_1">Базовая 1</string>
+    <string name="Basic_2">Базовая 2</string>
+    <string name="Continuous_1">Непрерывный 1</string>
+    <string name="Continuous_2">Непрерывный 2</string>
+    <string name="Cardio">Кардио</string>
+    <string name="Endurance_1">Выносливость 1</string>
+    <string name="Endurance_2">Выносливость 2</string>
+    <string name="Endurance_3">Выносливость 3</string>
+    <string name="Strength">Сила</string>
+    <string name="Strength_1">Сила 1</string>
+    <string name="Strength_2">Сила 2</string>
+    <string name="Fat_burning">Жиросжигание</string>
+    <string name="Fatburning_1">Жиросжигание 1</string>
+    <string name="Fatburning_2">Жиросжигание 2</string>
+    <string name="Relaxation">Релаксация</string>
+    <string name="Cooldown_1">Восстановление 1</string>
+    <string name="Cooldown_2">Восстановление 2</string>
+    <string name="Massage">Массаж</string>
+    <string name="Massage_1">Массаж</string>
+    <string name="Anti_cellulite">Антицеллюлитная</string>
+    <string name="Chose_Program_and_connect_to_your_device">Выберите программу и подключитесь к вашему устройству</string>
+    <string name="SAVED">СОХРАНЕНА</string>
+    <string name="Please_make_sure_that_youve_selected_subprogram">Пожалуйста, убедитесь, что вы выбрали подпрограмму</string>
+    <string name="triceps">Трицепс</string>
+    <string name="shoulder">Плечо</string>
+    <string name="hamstrings">Об.ст.б.</string>
+    <string name="hard">Сильная</string>
+    <string name="easy">Слабая</string>
+    <string name="medium">Средняя</string>
+    <string name="extra">Экстра</string>
+    <string name="gluteus">Ягодицы</string>
+    <string name="hands">Руки</string>
+    <string name="lower_back">Поясница</string>
+    <string name="back_spina">Спина</string>
+    <string name="trapesious">Трапец</string>
+    <string name="quadriceps">Квадр.</string>
+    <string name="abs">Пресс</string>
+    <string name="chest">Грудь</string>
+    <string name="duration">Продолжительность</string>
+    <string name="time_of_stimulation_s">Время стимуляции, с</string>
+    <string name="rest_time_ms">Время отдыха мс</string>
+    <string name="impulse">Импульс</string>
+    <string name="pause">Пауза</string>
+    <string name="start">Старт</string>
+    <string name="remove">Удалять</string>
+    <string name="Training_Saved">Тренировка сохранена</string>
+    <string name="Biceps">Бицепс</string>
+    <string name="Abdomen">Пресс</string>
+    <string name="Quadriceps">Квадр.</string>
+    <string name="Trapez">Трапец.</string>
+    <string name="Shoulder">Плечо</string>
+    <string name="Extra_1">Экстра 1</string>
+    <string name="Extra_2">Экстра 2</string>
+    <string name="chose_your_device">Выберите свое устройство</string>
+    <string name="Resume">Продолжить</string>
+    <string name="stop">Стоп</string>
+    <string name="selection_limit_7_clients">Вы можете выбрать максимум  7 клиентов</string>
+    <string name="client_already_present">Клиент уже присутствует на тренинге</string>
+    <string name="users_profile_updating_fields">обновление профиля</string>
+    <string name="creating_new_profile">создан новый профиль</string>
+    <string name="email_not_valid">"неверный формат Email "</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="you_haven_picked_pic">Вы не выбрали изображение</string>
+    <string name="all_fields_must_be_filled">Все поля должны быть заполнены</string>
+    <string name="same_updating">" то же самое, обновление"</string>
+
+</resources>

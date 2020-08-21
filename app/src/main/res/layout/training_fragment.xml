@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ScrollView
+        android:id="@+id/scroll_continer_for_training_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@color/transparent"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/cb_chest"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/pause"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView35"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/tv_impulsePausa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textColorHint="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView36"
+                    app:layout_constraintStart_toStartOf="@+id/textView36"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/tv_impulseStrength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="3000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textColorHint="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView35"
+                    app:layout_constraintStart_toStartOf="@+id/textView35"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/impulse"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton_decAllImpulses"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton_decAllImpulses" />
+
+                <ImageView
+                    android:id="@+id/imageView_display_user"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:background="#b0bec5"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:id="@+id/textview_user_Image_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView_display_user"
+                    app:layout_constraintStart_toStartOf="@+id/imageView_display_user"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_display_user" />
+
+                <Button
+                    android:id="@+id/startTraining_btn_Start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/start"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_display_user"
+                    app:layout_constraintTop_toTopOf="@+id/imageView_display_user" />
+
+                <Button
+                    android:id="@+id/startTraining_btn_Stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/pause"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/startTraining_btn_Start"
+                    app:layout_constraintStart_toStartOf="@+id/startTraining_btn_Start"
+                    app:layout_constraintTop_toBottomOf="@+id/startTraining_btn_Start" />
+
+                <Button
+                    android:id="@+id/startTraining_btn_TimeCounter"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/spinner_style"
+                    android:text="00:00"
+                    android:textColor="@color/colorRed"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/spinner_style"
+                    app:layout_constraintBottom_toBottomOf="@+id/startTraining_btn_Start"
+                    app:layout_constraintStart_toEndOf="@+id/startTraining_btn_Start"
+                    app:layout_constraintTop_toTopOf="@+id/startTraining_btn_Start">
+
+                    <EditText
+                        android:id="@+id/startTraining_EditText_timeLimit"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:hint="00"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorRed"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="@color/colorRed"
+                        android:textCursorDrawable="@color/colorRed"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/startTraining_EditText_timeLimit_seconds"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:hint="00"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorRed"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="@color/colorRed"
+                        android:textCursorDrawable="@color/colorRed"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                        app:layout_constraintStart_toStartOf="@+id/textView15"
+                        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text=":"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorRed"
+                        android:textColorHint="@color/colorRed"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/startTraining_EditText_timeLimit"
+                        app:layout_constraintStart_toStartOf="@+id/startTraining_EditText_timeLimit"
+                        app:layout_constraintTop_toTopOf="@+id/startTraining_EditText_timeLimit" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton_decAllImpulses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageButton_incAllImpulses"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton_incAllImpulses"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton_incAllImpulses"
+                    app:srcCompat="@drawable/icons8_minus_40" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_incAllImpulses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector"
+                    app:layout_constraintStart_toStartOf="@+id/seekBar_increase_all_levels"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currentTrainingName"
+                    app:srcCompat="@drawable/icons8_plus_40" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_increase_all_levels"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_frame_layout_style"
+                    android:progressBackgroundTint="#EF3535"
+                    app:layout_constraintEnd_toStartOf="@+id/strengthText_increaseAllLevels"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton_incAllImpulses" />
+
+                <TextView
+                    android:id="@+id/strengthText_increaseAllLevels"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    app:layout_constraintBottom_toBottomOf="@+id/seekBar_increase_all_levels"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/seekBar_increase_all_levels" />
+
+                <TextView
+                    android:id="@+id/tv_showDeviceName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="show connected device name"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textColorHint="@color/colorRed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/startTraining_btn_TimeCounter"
+                    app:layout_constraintTop_toTopOf="@+id/startTraining_btn_TimeCounter" />
+
+                <ImageButton
+                    android:id="@+id/button_currently_connected_device"
+                    style="@android:style/Widget.DeviceDefault.ImageButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_selector"
+                    android:cropToPadding="true"
+                    android:src="@drawable/icons8_bluetooth_2_48"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_showDeviceName"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_showDeviceName"
+                    app:layout_constraintStart_toStartOf="@+id/tv_showDeviceName" />
+
+                <TextView
+                    android:id="@+id/tv_currentTrainingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textview_user_Image_name"
+                    app:layout_constraintStart_toStartOf="@+id/textview_user_Image_name"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_user_Image_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <CheckBox
+                android:id="@+id/cb_chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+            <TextView
+                android:id="@+id/textViewNameChest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Грудь"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_chest"
+                app:layout_constraintStart_toStartOf="@+id/cb_chest"
+                app:layout_constraintTop_toBottomOf="@+id/cb_chest" />
+
+            <SeekBar
+                android:id="@+id/seekBar_chest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_chest"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_chest"
+                app:layout_constraintStart_toEndOf="@+id/cb_chest"
+                app:layout_constraintTop_toTopOf="@+id/cb_chest" />
+
+            <TextView
+                android:id="@+id/strengthtext_chest"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_chest"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_chest" />
+
+            <CheckBox
+                android:id="@+id/cb_hands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textViewNameChest"
+                app:layout_constraintStart_toStartOf="@+id/textViewNameChest"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameChest" />
+
+            <TextView
+                android:id="@+id/textView_nameHands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Руки"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_hands"
+                app:layout_constraintStart_toStartOf="@+id/cb_hands"
+                app:layout_constraintTop_toBottomOf="@+id/cb_hands" />
+
+            <SeekBar
+                android:id="@+id/seekBar_hands"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_hands"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_hands"
+                app:layout_constraintStart_toEndOf="@+id/cb_hands"
+                app:layout_constraintTop_toTopOf="@+id/cb_hands" />
+
+            <TextView
+                android:id="@+id/strengthtext_hands"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_hands"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_hands" />
+
+
+            <CheckBox
+                android:id="@+id/cb_abs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameHands"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameHands"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameHands" />
+
+            <TextView
+                android:id="@+id/textView_nameAbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="абс"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_abs"
+                app:layout_constraintStart_toStartOf="@+id/cb_abs"
+                app:layout_constraintTop_toBottomOf="@+id/cb_abs" />
+
+            <SeekBar
+                android:id="@+id/seekBar_abs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_abs"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_abs"
+                app:layout_constraintStart_toEndOf="@+id/cb_abs"
+                app:layout_constraintTop_toTopOf="@+id/cb_abs" />
+
+            <TextView
+                android:id="@+id/strengthtext_abs"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_abs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_abs" />
+
+            <CheckBox
+                android:id="@+id/cb_quadriceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameAbs"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameAbs"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameAbs" />
+
+            <SeekBar
+                android:id="@+id/seekBar_quadriceps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_quadriceps"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_quadriceps"
+                app:layout_constraintStart_toEndOf="@+id/cb_quadriceps"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameAbs" />
+
+            <TextView
+                android:id="@+id/strengthtext_quadriceps"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_quadriceps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_quadriceps" />
+
+            <TextView
+                android:id="@+id/textView_nameQuads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="quads"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_quadriceps"
+                app:layout_constraintStart_toStartOf="@+id/cb_quadriceps"
+                app:layout_constraintTop_toBottomOf="@+id/cb_quadriceps" />
+
+            <CheckBox
+                android:id="@+id/cb_trapesius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameQuads"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameQuads"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameQuads" />
+
+            <TextView
+                android:id="@+id/strengthtext_trapesius"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_trapesius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_trapesius" />
+
+            <TextView
+                android:id="@+id/textView_nameTrapez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="трапец"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_trapesius"
+                app:layout_constraintStart_toStartOf="@+id/cb_trapesius"
+                app:layout_constraintTop_toBottomOf="@+id/cb_trapesius" />
+
+            <SeekBar
+                android:id="@+id/seekBar_trapesius"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_trapesius"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_trapesius"
+                app:layout_constraintStart_toEndOf="@+id/cb_trapesius"
+                app:layout_constraintTop_toTopOf="@+id/cb_trapesius" />
+
+            <TextView
+                android:id="@+id/strengthtext_back"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_back" />
+
+            <CheckBox
+                android:id="@+id/cb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameTrapez"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameTrapez"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameTrapez" />
+
+            <TextView
+                android:id="@+id/textView_nameBack"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:text="спина"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_back"
+                app:layout_constraintStart_toStartOf="@+id/cb_back"
+                app:layout_constraintTop_toBottomOf="@+id/cb_back" />
+
+            <SeekBar
+                android:id="@+id/seekBar_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toTopOf="@+id/textView_nameBack"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_back"
+                app:layout_constraintStart_toEndOf="@+id/cb_back"
+                app:layout_constraintTop_toTopOf="@+id/cb_back" />
+
+            <CheckBox
+                android:id="@+id/cb_lowerBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameBack"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameBack"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameBack" />
+
+            <SeekBar
+                android:id="@+id/seekBar_lowerback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_lowerBack"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_lowerBack"
+                app:layout_constraintStart_toEndOf="@+id/cb_lowerBack"
+                app:layout_constraintTop_toTopOf="@+id/cb_lowerBack" />
+
+            <TextView
+                android:id="@+id/strengthtext_lowerBack"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_lowerback"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_lowerback" />
+
+            <TextView
+                android:id="@+id/textView_nameLowerBack"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:text="lower"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_lowerBack"
+                app:layout_constraintStart_toStartOf="@+id/cb_lowerBack"
+                app:layout_constraintTop_toBottomOf="@+id/cb_lowerBack" />
+
+            <CheckBox
+                android:id="@+id/cb_hamstrings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameLowerBack"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameLowerBack"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameLowerBack" />
+
+            <TextView
+                android:id="@+id/textView_nameHams"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:text="hams"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_hamstrings"
+                app:layout_constraintStart_toStartOf="@+id/cb_hamstrings"
+                app:layout_constraintTop_toBottomOf="@+id/cb_hamstrings" />
+
+            <SeekBar
+                android:id="@+id/seekbar_hamstrings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toTopOf="@+id/textView_nameHams"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_hamstrings"
+                app:layout_constraintStart_toEndOf="@+id/cb_hamstrings"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameLowerBack" />
+
+            <TextView
+                android:id="@+id/strengthtext_hamstrings"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekbar_hamstrings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekbar_hamstrings" />
+
+            <CheckBox
+                android:id="@+id/cb_glutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameHams"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameHams"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameHams" />
+
+            <TextView
+                android:id="@+id/strengthtext_glutes"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_gluteus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_gluteus" />
+
+            <TextView
+                android:id="@+id/textView_nameGlutes"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:text="glutes"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_glutes"
+                app:layout_constraintStart_toStartOf="@+id/cb_glutes"
+                app:layout_constraintTop_toBottomOf="@+id/cb_glutes" />
+
+            <SeekBar
+                android:id="@+id/seekBar_gluteus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_glutes"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_glutes"
+                app:layout_constraintStart_toEndOf="@+id/cb_glutes"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameHams" />
+
+            <CheckBox
+                android:id="@+id/cb_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameGlutes"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameGlutes"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameGlutes" />
+
+            <TextView
+                android:id="@+id/strengthtext_extra"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_extra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_extra" />
+
+            <SeekBar
+                android:id="@+id/seekBar_extra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_extra"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_extra"
+                app:layout_constraintStart_toEndOf="@+id/cb_extra"
+                app:layout_constraintTop_toTopOf="@+id/cb_extra" />
+
+            <TextView
+                android:id="@+id/textView_nameExtra"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:text="extra"
+                android:textColor="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_extra"
+                app:layout_constraintStart_toStartOf="@+id/cb_extra"
+                app:layout_constraintTop_toBottomOf="@+id/cb_extra" />
+
+            <CheckBox
+                android:id="@+id/cb_Triceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameExtra"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameExtra"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameExtra" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Triceps"
+                android:layout_width="667dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_Triceps"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_triceps"
+                app:layout_constraintStart_toEndOf="@+id/cb_Triceps"
+                app:layout_constraintTop_toTopOf="@+id/cb_Triceps" />
+
+            <TextView
+                android:id="@+id/strengthtext_triceps"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_Triceps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_Triceps" />
+
+            <TextView
+                android:id="@+id/textView_nameTriceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="triceps"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                app:layout_constraintEnd_toEndOf="@+id/cb_Triceps"
+                app:layout_constraintStart_toStartOf="@+id/cb_Triceps"
+                app:layout_constraintTop_toBottomOf="@+id/cb_Triceps" />
+
+            <CheckBox
+                android:id="@+id/cb_Shoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                app:layout_constraintEnd_toEndOf="@+id/textView_nameTriceps"
+                app:layout_constraintStart_toStartOf="@+id/textView_nameTriceps"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameTriceps" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Shoulder"
+                android:layout_width="667dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_frame_layout_style"
+                android:progressBackgroundTint="#EF3535"
+                app:layout_constraintBottom_toTopOf="@+id/textView_nameShoulder"
+                app:layout_constraintEnd_toStartOf="@+id/strengthtext_shoulder"
+                app:layout_constraintStart_toEndOf="@+id/cb_Shoulder"
+                app:layout_constraintTop_toBottomOf="@+id/textView_nameTriceps" />
+
+            <TextView
+                android:id="@+id/strengthtext_shoulder"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_Shoulder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_Shoulder" />
+
+            <TextView
+                android:id="@+id/textView_nameShoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="shoulder"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cb_Shoulder"
+                app:layout_constraintStart_toStartOf="@+id/cb_Shoulder"
+                app:layout_constraintTop_toBottomOf="@+id/cb_Shoulder" />
+
+
+            <!--    other 5-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
